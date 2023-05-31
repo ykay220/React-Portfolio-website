@@ -1,0 +1,98 @@
+.sideMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 105px;
+  height: 100vh;
+  background-color: #2196f3;
+  position: fixed;
+  color: white;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  z-index: 10;
+}
+
+.sideMenu .nav {
+  padding: 26px;
+  list-style-type: none;
+}
+
+.sideMenu .nav a {
+  padding: 13px 17px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  border-radius: 6px;
+  width: 100%;
+  position: relative;
+}
+
+.sideMenu .nav a .listItem {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  position: absolute;
+  left: 55px;
+  text-transform: uppercase;
+  top: 18px;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.sideMenu_logo {
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  background-color: #1e88e5;
+}
+
+.sideMenu .nav a:hover,
+.sideMenu .nav a:focus {
+  background-color: #64b5f6;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+.scrollBottom {
+  visibility: hidden;
+}
+
+@media (min-width: 991px) {
+  .sideMenu:hover {
+    width: 220px;
+  }
+
+  .sideMenu .nav a .listItem {
+    display: none;
+  }
+
+  .sideMenu:hover .nav a .listItem {
+    display: block;
+  }
+}
+
+@media (max-width: 1095px) {
+  .sideMenu {
+    width: 220px;
+  }
+
+  .sideMenuHide {
+    left: -300px;
+  }
+  .sideMenuShow {
+    left: 0px;
+  }
+}

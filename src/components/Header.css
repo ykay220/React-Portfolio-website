@@ -1,0 +1,164 @@
+.overview-Wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-Wrap {
+  flex-basis: 50%;
+  padding: 0 15px;
+}
+
+.description-wrap {
+  flex-basis: 50%;
+  padding: 0 15px;
+}
+
+.img-Wrap img {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+  box-shadow: 12px 0 #64b5f6, 24px 0 #90caf9, 36px 0 #bbdefb;
+}
+
+.blue-text {
+  color: #1e88e5;
+}
+.top-text {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.name-text {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin: 24px 0;
+  text-transform: uppercase;
+}
+
+.bio-text {
+  letter-spacing: 1px;
+  color: #5f6f81;
+  font-size: 1rem;
+  min-width: 250px;
+  line-height: 1.4;
+}
+
+.btn-resume {
+  background-color: #1e88e5;
+  padding: 15px 35px;
+  color: white;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.socials-wrap {
+  display: flex;
+  margin-top: 30px;
+}
+
+.socials-list {
+  display: flex;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.socials-listItem {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.socials-listItem a svg {
+  width: 25px;
+  height: 20px;
+}
+.socials-listItem a {
+  padding: 9px 10px;
+  background-color: white;
+  border-radius: 6px;
+  color: #1e88e5;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0px 4px 6px rgba(134, 151, 168, 0.1);
+  box-shadow: 0px 4px 6px rgba(134, 151, 168, 0.1);
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.menuButton {
+  cursor: pointer;
+  position: fixed;
+  height: 30px;
+  width: 35px;
+  padding: 10px;
+  top: 35px;
+  right: 25px;
+  z-index: 20;
+  display: none;
+}
+.menuButton .linesContainer {
+  position: relative;
+}
+
+.menuButton .linesContainer span,
+.menuButton .linesContainer span:before,
+.menuButton .linesContainer span:after {
+  border-radius: 5px;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.menuButton .linesContainer span:after {
+  bottom: -10px;
+}
+
+.menuButton .linesContainer span:before {
+  top: -10px;
+}
+
+.menuButton .linesContainer span {
+  top: 3px;
+  left: -6px;
+}
+
+@media (max-width: 1095px) {
+  .menuButton {
+    display: block;
+  }
+  .img-Wrap img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .img-Wrap {
+    flex-basis: 100%;
+    padding: 0 15px;
+  }
+
+  .description-wrap {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .overview-Wrap {
+    display: block;
+    padding: 80px 0;
+    height: auto;
+  }
+  .socials-wrap {
+    justify-content: center;
+  }
+}
