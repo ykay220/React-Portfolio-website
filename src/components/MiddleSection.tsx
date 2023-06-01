@@ -85,11 +85,7 @@ const MiddleSection = ({ navRefs }: SideNavProps) => {
             <div className="contactFlex">
               <div className="contactInner cal">
                 <FaCalendarDay className="cal-icon" />
-                <a
-                  href="https://calendly.com/alexcalia/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://calendly.com/yamakarimi" target="_blank">
                   Calendly
                 </a>
                 <p>Schedule a Meeting</p>
