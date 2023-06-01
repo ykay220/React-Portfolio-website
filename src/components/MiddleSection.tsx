@@ -28,12 +28,12 @@ const MiddleSection = ({ navRefs }: SideNavProps) => {
 
         <div className="sectionInner">
           <p className="about-p">
-            I'm an agile Front-End Developer with practical expertise in
-            implementing HTML, CSS, and JavaScript updates for Q4 client
-            websites. Efficient in managing multiple projects concurrently, I
-            possess an unwavering passion for coding and using it to solve
-            problems. I am thrilled to collaborate with exceptional programmers
-            and expand my knowledge further!
+            I am an agile Front-End Developer with a strong background in
+            computer networks. Over the course of 3 years in a professional work
+            environment, I have diligently refined my skills and built a solid
+            foundation in web development. I possess an unwavering passion for
+            coding and using it to solve problems. I am thrilled to collaborate
+            with exceptional programmers and expand my knowledge further!
           </p>
         </div>
       </div>
