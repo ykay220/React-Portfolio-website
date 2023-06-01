@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -95,13 +97,16 @@ menu,
 nav,
 section {
   display: block;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #f7f7f7 !important;
+  font-family: "Poppins", sans-serif !important;
 }

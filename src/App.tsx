@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import MiddleSection from "./components/MiddleSection";
 import navLi from "./navLi";
 import { useRef, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [isHidden, setHidden] = useState(false);
@@ -26,7 +27,7 @@ function App() {
       <Grid
         templateAreas={{
           // base: `"nav" "main"`,
-          lg: `"aside main"  "aside footer"`,
+          lg: `"aside main"  "footer footer"`,
         }}
         templateColumns={{
           base: "1fr",
@@ -44,7 +45,7 @@ function App() {
           </MainContainer>
         </GridItem>
         <GridItem area="footer">
-          <p>Footer</p>
+          <Footer />
         </GridItem>
       </Grid>
     </>

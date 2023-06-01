@@ -37,9 +37,10 @@ const Header = ({ onToggleHandler, navRefs }: SideNavProps) => {
             <span className="blue-text">Yama</span> Karimi
           </h1>
           <p className="bio-text">
-            A <span className="blue-text">Front-End Web Developer</span>{" "}
-            passionate about creating interactive applications and experiences
-            on the web.
+            A passionate{" "}
+            <span className="blue-text"> Front-End Web Developer </span>
+            dedicated to crafting interactive applications and experiences
+            online.
           </p>
           <div className="socials-wrap">
             <a className="btn-resume" target="_blank" href={resume}>

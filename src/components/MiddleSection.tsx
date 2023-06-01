@@ -1,6 +1,9 @@
 import React, { RefObject, useRef } from "react";
 import "./MiddleSection.css";
 import skillIcons from "../skills-icons";
+import projectsInfo from "../projectInfo";
+import ProjectsCard from "./ProjectsCard";
+import { FaEnvelope, FaCalendarDay } from "react-icons/fa";
 
 interface NavRefs {
   [key: string]: RefObject<HTMLDivElement>;
@@ -24,20 +27,14 @@ const MiddleSection = ({ navRefs }: SideNavProps) => {
         </div>
 
         <div className="sectionInner">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est
-          quo nobis aliquid saepe, cupiditate, quibusdam perspiciatis ex
-          consequuntur maiores quasi inventore tenetur ratione laboriosam cumque
-          placeat quidem nostrum voluptatibus. Reiciendis, ipsam. Necessitatibus
-          perferendis alias voluptatum incidunt itaque reiciendis labore placeat
-          aliquid, esse doloremque modi rerum! Autem, consequuntur! Voluptatum
-          maiores quae porro sit quos, praesentium deleniti delectus ipsam vel
-          neque! Minus rem veritatis possimus reprehenderit explicabo minima
-          eaque facere aspernatur. Odit dicta distinctio at. Obcaecati, ab unde.
-          Ullam a doloribus, consequuntur harum cupiditate nulla deleniti
-          facilis quibusdam neque, debitis sapiente! Repellendus nihil voluptas
-          velit voluptatum laboriosam ullam maiores illo ratione quae nisi
-          incidunt alias beatae adipisci, dignissimos optio sint nemo fugiat
-          magni in natus? Ex nulla magnam dignissimos qui et.
+          <p className="about-p">
+            I'm an agile Front-End Developer with practical expertise in
+            implementing HTML, CSS, and JavaScript updates for Q4 client
+            websites. Efficient in managing multiple projects concurrently, I
+            possess an unwavering passion for coding and using it to solve
+            problems. I am thrilled to collaborate with exceptional programmers
+            and expand my knowledge further!
+          </p>
         </div>
       </div>
 
@@ -63,20 +60,9 @@ const MiddleSection = ({ navRefs }: SideNavProps) => {
           <h2>Projects</h2>
         </div>
         <div className="sectionInner">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est
-          quo nobis aliquid saepe, cupiditate, quibusdam perspiciatis ex
-          consequuntur maiores quasi inventore tenetur ratione laboriosam cumque
-          placeat quidem nostrum voluptatibus. Reiciendis, ipsam. Necessitatibus
-          perferendis alias voluptatum incidunt itaque reiciendis labore placeat
-          aliquid, esse doloremque modi rerum! Autem, consequuntur! Voluptatum
-          maiores quae porro sit quos, praesentium deleniti delectus ipsam vel
-          neque! Minus rem veritatis possimus reprehenderit explicabo minima
-          eaque facere aspernatur. Odit dicta distinctio at. Obcaecati, ab unde.
-          Ullam a doloribus, consequuntur harum cupiditate nulla deleniti
-          facilis quibusdam neque, debitis sapiente! Repellendus nihil voluptas
-          velit voluptatum laboriosam ullam maiores illo ratione quae nisi
-          incidunt alias beatae adipisci, dignissimos optio sint nemo fugiat
-          magni in natus? Ex nulla magnam dignissimos qui et.
+          {projectsInfo.map((project) => (
+            <ProjectsCard projectData={project} />
+          ))}
         </div>
       </div>
 
@@ -85,20 +71,31 @@ const MiddleSection = ({ navRefs }: SideNavProps) => {
           <h2>Contact</h2>
         </div>
         <div className="sectionInner">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est
-          quo nobis aliquid saepe, cupiditate, quibusdam perspiciatis ex
-          consequuntur maiores quasi inventore tenetur ratione laboriosam cumque
-          placeat quidem nostrum voluptatibus. Reiciendis, ipsam. Necessitatibus
-          perferendis alias voluptatum incidunt itaque reiciendis labore placeat
-          aliquid, esse doloremque modi rerum! Autem, consequuntur! Voluptatum
-          maiores quae porro sit quos, praesentium deleniti delectus ipsam vel
-          neque! Minus rem veritatis possimus reprehenderit explicabo minima
-          eaque facere aspernatur. Odit dicta distinctio at. Obcaecati, ab unde.
-          Ullam a doloribus, consequuntur harum cupiditate nulla deleniti
-          facilis quibusdam neque, debitis sapiente! Repellendus nihil voluptas
-          velit voluptatum laboriosam ullam maiores illo ratione quae nisi
-          incidunt alias beatae adipisci, dignissimos optio sint nemo fugiat
-          magni in natus? Ex nulla magnam dignissimos qui et.
+          <h3 className="contact-title">Get in Touch</h3>
+          <div className="contactWrap">
+            <div className="contactFlex">
+              <div className="contactInner mail">
+                <FaEnvelope className="env-icon" />
+                <a href="mailto:yama.karimi08@gmail.com">
+                  yama.karimi08@gmail.com
+                </a>
+                <p>Email Me</p>
+              </div>
+            </div>
+            <div className="contactFlex">
+              <div className="contactInner cal">
+                <FaCalendarDay className="cal-icon" />
+                <a
+                  href="https://calendly.com/alexcalia/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Calendly
+                </a>
+                <p>Schedule a Meeting</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
