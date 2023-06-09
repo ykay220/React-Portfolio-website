@@ -46,13 +46,13 @@ const projectsInfo = [
     techBio: "Technologies Used: React,CSS",
     details: [
       {
-        info: "The weather app provides a user-friendly interface that allows users to easily input any city name and instantly retrieve the 7-day weather forecast for that location.",
+        info: "The weather app offers a user-friendly interface for inputting city names and retrieving instant 7-day forecasts.",
       },
       {
-        info: "Leverages the useState and useEffect hooks in React, the app dynamically fetches weather data from a reliable weather forecast API. This ensures that users have access to up-to-date and accurate weather information.",
+        info: "Using React's useState and useEffect hooks, the app fetches real-time weather data from a reliable API, ensuring up-to-date accuracy.",
       },
       {
-        info: "The app presents the weather forecast for each day in a visually appealing manner, using cards to display detailed information such as temperature, humidity, wind speed, and weather conditions (e.g., sunny, cloudy, rainy).",
+        info: "The app visually presents daily weather forecasts through cards, displaying detailed information like temperature, humidity, wind speed, and weather conditions.",
       },
     ],
   },
