@@ -3,6 +3,7 @@ import gamehub from "./assets/game-hub-hero.png";
 import gamehubcropped from "./assets/game-hub-hero-crop.png";
 import tracker from "./assets/expense-hero.png";
 import weather from "./assets/weather-screen.png";
+import covid from "./assets/covid-app.yamakarimi.com_.png";
 const projectsInfo = [
   {
     id: 1,
@@ -53,6 +54,25 @@ const projectsInfo = [
       },
       {
         info: "The app visually presents daily weather forecasts through cards, displaying detailed information like temperature, humidity, wind speed, and weather conditions.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: covid,
+    title: "COVID Neighbourhood Tracker: Toronto",
+    github: "https://github.com/ykay220/Covid19-torontocaseApi",
+    live: "https://covid-app.yamakarimi.com/",
+    techBio: "Technologies Used: React,CSS",
+    details: [
+      {
+        info: "Choose a Toronto neighbourhood from the dropdown menu to access localized COVID-19 case information (Data from Janurary 2020 to 2021).",
+      },
+      {
+        info: "View total cases, gender breakdown, and outcomes (deaths, resolved cases, diagnosed) to understand the COVID-19 situation in the selected neighbourhood",
+      },
+      {
+        info: "Includes a page that utilizes the Chart.js library to display visual chart data for each neighbourhood.",
       },
     ],
   },
