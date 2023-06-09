@@ -43,7 +43,7 @@ const projectsInfo = [
     img: weather,
     title: "Real Time 7 Day Weather Forecast",
     github: "https://github.com/ykay220/Weatherapp-5-day-forecast",
-    live: "https://employee-tracker.yamakarimi.com/",
+    live: "https://weatherapp.yamakarimi.com/",
     techBio: "Technologies Used: React,CSS",
     details: [
       {
