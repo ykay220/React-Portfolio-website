@@ -4,12 +4,13 @@ import gamehubcropped from "./assets/game-hub-hero-crop.png";
 import tracker from "./assets/expense-hero.png";
 import weather from "./assets/weather-screen.png";
 import covid from "./assets/covid-app.yamakarimi.com_.png";
+import deck from "./assets/flashcards.png";
 const projectsInfo = [
   {
     id: 1,
     img: gamehubcropped,
     title: "Game Hub",
-    techBio: "Technologies Used: React,CSS",
+    techBio: "Technologies Used: React,CSS,Typescript",
     github: "https://github.com/ykay220/Game-hub",
     live: "https://game-hub.yamakarimi.com/",
     details: [
@@ -23,11 +24,31 @@ const projectsInfo = [
 
   {
     id: 2,
+    img: deck,
+    title: "FlashDeck",
+    github: "https://github.com/ykay220/flashcardproject",
+    live: "https://flash-cards.yamakarimi.com/",
+    techBio: "Technologies Used: React,CSS,Typescript,MongoDB,Node",
+    details: [
+      {
+        info: "A deck of cards concept, where users can create multiple decks and associate specific cards with each deck",
+      },
+      {
+        info: "Implemented Backend server with MongoDB integration.",
+      },
+      {
+        info: "Users can easily create and organize individual cards within each deck",
+      },
+    ],
+  },
+
+  {
+    id: 3,
     img: tracker,
     title: "Employee Tracking System",
     github: "https://github.com/ykay220/Employee-Directory-and-Tracking-System",
     live: "https://employee-tracker.yamakarimi.com/",
-    techBio: "Technologies Used: React,CSS,Bootstrap",
+    techBio: "Technologies Used: React,CSS,Typescript,Bootstrap",
     details: [
       { info: "Utilizing react-hook-form for form handling and validation" },
       {
@@ -39,12 +60,12 @@ const projectsInfo = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: weather,
     title: "Real Time 7 Day Weather Forecast",
     github: "https://github.com/ykay220/Weatherapp-5-day-forecast",
     live: "https://weatherapp.yamakarimi.com/",
-    techBio: "Technologies Used: React,CSS",
+    techBio: "Technologies Used: React,CSS,Typescript",
     details: [
       {
         info: "The weather app offers a user-friendly interface for inputting city names and retrieving instant 7-day forecasts.",
@@ -58,12 +79,12 @@ const projectsInfo = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: covid,
     title: "COVID Neighbourhood Tracker: Toronto",
     github: "https://github.com/ykay220/Covid19-torontocaseApi",
     live: "https://covid-app.yamakarimi.com/",
-    techBio: "Technologies Used: React,CSS",
+    techBio: "Technologies Used: React,CSS,Typescript",
     details: [
       {
         info: "Choose a Toronto neighbourhood from the dropdown menu to access localized COVID-19 case information (Data from Janurary 2020 to 2021).",
