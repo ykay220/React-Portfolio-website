@@ -1,6 +1,6 @@
 import "./Header.css";
 import selfie from "../assets/ykc.jpg";
-import resume from "../assets/Yama-Karimi-Resume.pdf";
+import resume from "../assets/Yama Karimi - Front End Dev Resume.pdf";
 import mediaIcons from "../mediaIcons";
 import { RefObject, useState } from "react";
 
